@@ -1,0 +1,56 @@
+.info h1 {
+    color: #FF6275;
+}
+
+.content {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    
+    margin-bottom: 2em;
+}
+
+#peak-banner {
+    background-image: url(../img/peak-banner.jpg);
+}
+
+.context {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+@media (min-width: 66.1em) { .context { padding-right: 8.3333333vw; }}
+@media (max-width: 66.1em) { .context { padding-right: 0; }}
+
+.content .row {
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 66.1em) { .content { padding-right: 8.3333333%; }}
+@media (max-width: 66.1em) { .content { padding-right: 12.5%; }}
+
+.single {
+    flex: 1 1 10%;
+}
+
+.double {
+    flex: 2 2 20%;
+}
+
+.img-container {
+    padding: 0.25em;
+}
+    
+.proj-footer {
+    background-image: url(../img/refuge-footer.jpg);
+}
+
+.proj-footer .text h2 {
+    color: #FFBE83;
+}

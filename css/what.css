@@ -1,0 +1,125 @@
+.project-container {
+    width: 100%;
+    height: auto;
+}
+    
+@media (max-width: 66.1em) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.project {
+    text-align: center;
+    
+    position: relative;
+    
+    box-shadow: 5px 4px 18px rgba(55, 68, 113, 0.35), 
+                -6px -7px 14px #FFFFFF,
+                inset 4px 3px 12px rgba(58, 89, 118, 0.9), 
+                inset -4px -3px 10px rgba(255, 255, 255, 0.5);
+    
+    transition: box-shadow 0.25s ease;
+}
+
+@media (min-width: 66.1em) { 
+    .project {
+        flex: 1 1 16.6666666667vw;
+
+        max-width: 16.6666666667vw;
+        max-height: 16.6666666667vw;
+
+        min-width: 16.6666666667vw;
+        min-height: 16.6666666667vw;
+
+        border-radius: 10%;
+    }
+}
+
+@media (max-width: 66.1em) { 
+    .project {
+        flex: 1 1 100vw;
+
+        max-width: 25vw;
+        max-height: 25vw;
+
+        min-width: 25w;
+        min-height: 25vw;
+
+        border-radius: 10%;
+        
+        margin-bottom: 4em;
+    }
+}
+
+@media (max-width: 45em) { 
+    .project {
+        flex: 1 1 100vw;
+
+        max-width: 50vw;
+        max-height: 50vw;
+
+        min-width: 50w;
+        min-height: 50vw;
+
+        border-radius: 10%;
+        
+        margin-bottom: 2em;
+    }
+}
+
+
+.project:active, .project:focus, .project:hover {        
+    box-shadow: 8px 7px 12px #FFFFFF, 
+                -4px -5px 29px rgba(55, 68, 113, 0.35), 
+                inset 4px 3px 25px rgba(10, 10, 10, .1);
+    
+    transition: box-shadow 0.25s ease;
+}
+
+.refuge {
+    background-color: #FFBE83;
+}
+
+.mysurrey {
+    background-color: #336CFF;
+}
+
+.the-peak {
+    background-color: #FF6275;
+}
+
+.project img {
+    border-radius: 10%;
+    
+    opacity: 0.75;
+    transition: opacity 0.25s ease;
+}
+
+.project-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+     
+    text-align: center;
+    vertical-align: middle;
+    
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.project-title h2, .project-title p {
+    color: white;
+    margin: 0;
+}
+
+.project:active img, .project:focus img, .project:hover img {
+    opacity: 0.02;
+}
+
+.project:active .project-title, .project:focus .project-title, .project:hover .project-title {
+    opacity: 1;
+}
