@@ -24,7 +24,7 @@
     
     .bio p {
         flex: 1 1 50%;
-        padding-left: 8.33333334vw;
+        padding-left: 8.33333333vw;
     }
 }
 
@@ -43,5 +43,172 @@
         flex: 1 1 100%;
         margin-top: 3em;
         max-width: 50vw;
+    }
+}
+
+.manifesto {
+    width: 100%;
+    padding: 0 16.7777777vw;
+    margin: 5em 0; 
+}
+
+@media (min-width: 68.625em) { 
+    .manifesto h2 {
+        flex: 3 12 25%;
+        padding-right: 4.16666666667vw;
+        
+        font-size: 2em;
+    }
+    
+    .manifesto .principles {
+        flex: 5 12 41.666666666%;
+    }
+    
+    .principles .principle {     
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+            
+        align-items: flex-start;
+
+        flex-wrap: -webkit-wrap;
+        flex-wrap: -ms-wrap;
+        flex-wrap: wrap;
+        
+        margin-bottom: 3em;
+    }
+    
+    .principle h3 {
+        flex: 2 5 40%;
+        padding-right: 4.125125125125vw;
+        
+        color: #FF6275;
+        font-size: 2em;
+    }
+    
+    .principle p {
+        flex: 3 5 60%;
+    }
+}
+
+@media (max-width: 68.625em) { 
+    .manifesto h2 {
+        flex: 1 1 100%;
+/*        padding-right: 8.33333333333vw;*/
+        
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+    
+    .manifesto .principles {
+        flex: 5 12 41.666666666%;
+    }
+    
+    .principles .principle {     
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+            
+        align-items: flex-start;
+
+        flex-wrap: -webkit-wrap;
+        flex-wrap: -ms-wrap;
+        flex-wrap: wrap;
+        
+        margin-bottom: 3em;
+    }
+    
+    .principle h3 {
+        flex: 2 5 40%;
+        padding-right: 4.125125125125vw;
+        
+        color: #FF6275;
+        font-size: 2em;
+    }
+    
+    .principle p {
+        flex: 3 5 60%;
+    }
+}
+
+@media (max-width: 66em) { 
+    .manifesto h2 {
+        flex: 1 1 100%;
+        
+        font-size: 2em;
+        max-width: 50vw;
+        margin-bottom: 2em;
+    }
+    
+    .manifesto .principles {
+        flex: 5 12 41.666666666%;
+        max-width: 50vw;
+    }
+    
+    .principles .principle {     
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+            
+        align-items: flex-start;
+
+        flex-wrap: -webkit-wrap;
+        flex-wrap: -ms-wrap;
+        flex-wrap: wrap;
+        
+        margin-bottom: 3em;
+    }
+    
+    .principle h3 {
+        flex: 2 5 40%;
+        padding-right: 4.125125125125vw;
+        
+        color: #FF6275;
+        font-size: 2em;
+    }
+    
+    .principle p {
+        flex: 3 5 60%;
+    }
+}
+
+@media (max-width: 55.25em) { 
+    .manifesto h2 {
+        flex: 1 1 100%;
+        
+        font-size: 2em;
+        max-width: 50vw;
+        margin-bottom: 2em;
+    }
+    
+    .manifesto .principles {
+        flex: 5 12 41.666666666%;
+        max-width: 50vw;
+    }
+    
+    .principles .principle {     
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+            
+        align-items: flex-start;
+
+        flex-wrap: -webkit-wrap;
+        flex-wrap: -ms-wrap;
+        flex-wrap: wrap;
+        
+        margin-bottom: 3em;
+    }
+    
+    .principle h3 {
+        flex: 1 1 100%;
+        margin-bottom: 1em;
+        
+        color: #FF6275;
+        font-size: 2em;
+    }
+    
+    .principle p {
+        flex: 1 1 100%;
     }
 }
