@@ -6,40 +6,35 @@
     background-image: url(../img/refuge-banner.jpg);
 }
 
-@media (min-width: 66.1em) { 
-    .analysis-artifacts { 
-        padding-left: 8.3333333vw;
-        flex: 4 4 57.1428571%; /* 4/7 */
-        
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        
-        align-items: flex-start;
+.analysis-artifacts { 
+/*  padding-left: 8.3333333vw;*/
+/*  flex: 4 4 57.1428571%;  4/7 */
 
-        flex-wrap: -webkit-wrap;
-        flex-wrap: -ms-wrap;
-        flex-wrap: wrap;
-    }
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    align-items: flex-start;
+
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
     
-    .analysis-artifacts-mobile { 
-        display: none; 
-    }
+    margin: 3em 0;
 }
 
-@media (max-width: 66.1em) { 
-    .analysis-artifacts {
-        display: none;
-    }
-    
-    .analysis-artifacts-mobile {
-        padding-right: 12.5vw; /* 1/8 */
-        flex: 1 1 100%;
-    }
-}
 
-.analysis-artifacts picture {
+.analysis-artifacts figure, .anaylsis-artifact picturew{
     flex: 1 1 100%;
+    margin: 0;
+}
+
+.analysis-artifacts figcaption {
+    font-size: 0.9em;
+    color: #555555;
+    line-height: 1.4em;
+    
+    margin-top: 1em;
 }
 
 .card .lightbox picture, .card .lightbox img, .card .lightbox video {
@@ -51,7 +46,15 @@
 }
 
 .onboarding {
-    margin-top: 3em;
+    margin: 3em 0;
+}
+
+@media (min-width: 66.1em) {
+.onboarding { margin-left: 25vw; }
+}
+
+@media (max-width: 66.1em) {
+.onboarding { margin-left: 12.5vw; }
 }
 
 .onboarding h2, onboarding h3 {
@@ -91,6 +94,10 @@
 
         border-radius: 15%/7.2%;
     }
+}
+
+.presentation-container {
+    margin-bottom: 3em;
 }
 
 .proj-footer {

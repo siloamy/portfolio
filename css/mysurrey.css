@@ -9,39 +9,40 @@
 #mysurrey-banner {
     background-image: url(../img/mysurrey-bridge-banner.jpg);
 }
+     
+.analysis-artifacts {
+    padding-left: 0;
+    flex: 1 1 100%; /* 4/7 */
+
+    order: 1;
+
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    margin: 3em 0;
+
+}
+
+
+.analysis-artifacts figure, analysis-artifact picture {
+    margin: 0;
+}
+
+.analysis-artifacts figcaption {
+    font-size: 0.9em;
+    color: #555555;
+    line-height: 1.4em;
+    
+    margin-top: 1em;
+}
 
 @media (min-width: 66.1em) {
-    .analysis-artifacts {
-        padding-left: 8.3333333vw;
-        flex: 4 4 57.1428571%; /* 4/7 */
-
-        order: 2;
-    }
-    
-    .analysis-content {
-        order: 1;
-    }
+.wireframe { margin-left: 25vw; }
 }
-     
+
 @media (max-width: 66.1em) {
-    .analysis-artifacts {
-        padding-left: 0;
-        flex: 1 1 100%; /* 4/7 */
-
-        order: 1;
-        
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-    }
-    
-    .analysis-content {
-        order: 2;
-    }
-}
-
-.analysis-artifacts picture {
-    margin-bottom: 2em;
+.wireframe { margin-left: 12.5vw; }
 }
 
 .wireframe h2, wireframe h3 {
@@ -78,6 +79,10 @@
 
         border-radius: 1%;
     }
+}
+
+.presentation-container {
+    margin-bottom: 3em;
 }
 
 .proj-footer {
