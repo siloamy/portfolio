@@ -179,11 +179,13 @@ img {
     flex: 1 1 100%;
     text-align: center;
     font-weight: bold;
+    z-index: 0;
 }
 
 .name a {
     color: #1d1d1d;
     text-decoration: none;
+    
 }
 
 .nav {
@@ -251,6 +253,7 @@ img {
 @media (max-width: 66.1em) { .project-container {margin-bottom: 4em; }}
 
 .main-footer {
+    background-color: #e4e4e4;
     box-shadow: inset 2px 5px 10px rgba(58, 89, 118, 0.08);
         
     display: -webkit-flex;

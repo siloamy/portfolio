@@ -3,6 +3,14 @@
     height: auto;
 }
     
+
+@media (min-width: 66.1em) {
+    .project-container {
+        padding-right: 16.333333333%;
+        padding-left: 16.333333333%
+    }
+}
+
 @media (max-width: 66.1em) {
     .project-container {
         flex-direction: column;
@@ -25,15 +33,19 @@
 
 @media (min-width: 66.1em) { 
     .project {
-        flex: 1 1 16.6666666667vw;
+        flex: 1 2 50%;
 
-        max-width: 16.6666666667vw;
-        max-height: 16.6666666667vw;
+        max-width: 16.6666666666vw;
+        max-height: 16.6666666666vw;
 
-        min-width: 16.6666666667vw;
-        min-height: 16.6666666667vw;
+        min-width: 16.6666666666vw;
+        min-height: 16.6666666666vw;
 
         border-radius: 10%;
+        
+        margin-left: 8.2vw;
+        margin-right: 8.2vw;
+        margin-bottom: 6em;
     }
 }
 
@@ -78,6 +90,10 @@
     transition: box-shadow 0.25s ease;
 }
 
+.discord {
+    background-color: #7289DA;
+}
+
 .refuge {
     background-color: #FFBE83;
 }
@@ -94,6 +110,13 @@
     border-radius: 10%;
     
     opacity: 0.75;
+    transition: opacity 0.25s ease;
+}
+
+.discord img {
+    border-radius: 10%;
+    
+    opacity: 1;
     transition: opacity 0.25s ease;
 }
 
@@ -117,7 +140,7 @@
 }
 
 .project:active img, .project:focus img, .project:hover img {
-    opacity: 0.02;
+    opacity: 0;
 }
 
 .project:active .project-title, .project:focus .project-title, .project:hover .project-title {
