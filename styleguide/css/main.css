@@ -1,6 +1,6 @@
-/*******************************************/
-/************* START OF MAIN ***************/
-/*******************************************/
+/********************************************/
+/************** START OF MAIN ***************/
+/********************************************/
 
 * {
     box-sizing: border-box;
@@ -9,7 +9,13 @@
 }
 
 html {
-     background-color: #e4e4e4;
+    background-color: #e4e4e4;
+    max-width: 96em;
+    margin: auto;
+    
+    background-size: 24em 24em;
+    background-image: linear-gradient(90deg, #C9C9C9 0.1px, rgba(48, 48, 48, 0) 1px);
+    background-position: left;
 }
 
 body {
@@ -17,82 +23,17 @@ body {
     color: #1d1d1d;
 }
 
-.bg-columns {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.col-line {
-    background-color: #d2d2d2;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 1px;
-}
-
-@media (min-width: 66em) {
-    
-    .col-line:nth-last-child(1) {
-        left: 8.33333333%; /* 1/12 */
-    }
-
-    .col-line:nth-last-child(2) {
-        left: 25%; /* 3/12 */
-    }
-
-    .col-line:nth-last-child(3) {
-        left: 41.6666667%; /* 5/12 */
-    }
-
-    .col-line:nth-last-child(4) {
-        left: 58.3333333%; /* 7/12 */
-    }
-
-    .col-line:nth-last-child(5) {
-        left: 75%; /* 9/12 */
-    }
-
-    .col-line:nth-last-child(6) {
-        left: 91.6666667%; /* 11/12 */
-    }
-
-} 
-
-@media (max-width: 66em) {
-    
-    .col-line:nth-last-child(1) {
-        left: 12.5%; /* 1/8 */
-    }
-
-    .col-line:nth-last-child(2) {
-        left: 37.5%; /* 3/8 */
-    }
-
-    .col-line:nth-last-child(3) {
-        left: 62.5%; /* 5/8 */
-    }
-
-    .col-line:nth-last-child(4) {
-        left: 87.5%; /* 7/8 */
-    }
-
-    .col-line:nth-last-child(5) {
-        display: none;
-    }
-
-    .col-line:nth-last-child(6) {
-        display: none;
-    }
-}
-
 h1, h2 {
-    color: #454545;
+    color: #000000;
     margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 a {
@@ -135,52 +76,38 @@ img {
     flex-wrap: -ms-wrap;
     flex-wrap: wrap;
 
-    justify-content: space-around;
-    margin-bottom: 2.5em;
+    justify-content: flex-start;
+    margin-bottom: 4em;
 }
 
 .nav-bar {
-    padding-top: 1.5em;
-    padding-bottom: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    align-items: baseline;
 }
 
 .logo {
-    position: fixed;
-    left: 2.77777777778%;
+    flex: 1 1;
 }
 
 .logo div {
-    height: 2.5em;
-    width: 2.5em;
-    
-    margin: auto;
-    
-    background: #F1F1F1;
-    box-shadow: 5px 4px 18px rgba(55, 68, 113, 0.35), -6px -7px 14px #FFFFFF, inset 4px 3px 4px rgba(58, 89, 118, 0.08), inset -4px -3px 2px rgba(255, 255, 255, 0.08);
-    border-radius: 77px;
-    
-    transition: 0.25s;
-    
-    text-align: center;
-    line-height: 2.5em;
-    
-    letter-spacing: -0.05em;
+    text-align: left;
 }
 
 .logo div:hover {
-    box-shadow: none;
+    color: #FF6275;
     transition: 0.3s;
 }
 
 .logo a {
-    color: #B6B6B6;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 2em;
 }
 
 .name {
-    flex: 1 1 100%;
+    flex: 1 1;
     text-align: center;
     font-weight: bold;
 }
@@ -191,37 +118,16 @@ img {
 }
 
 .nav {
-    position: fixed;    
-    
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-
-    flex-wrap: -webkit-wrap;
-    flex-wrap: -ms-wrap;
-    flex-wrap: wrap;
-
-    justify-content: space-around;
+    flex: 1 1;
+    text-align: right;
 }
 
-@media (min-width: 66.1em) { .nav {
-    padding-left: 91.97%; /* 11/12 */ 
-    left: 0;
-    text-align: left;
-    }}
-    
-@media (max-width: 66.1em) { .nav {
-    padding-right: 12.5%; /* 1/8 */ 
-    right: 0;
-    text-align: right;
-    }}
-
 .nav a {
-    flex: 1 1 100%;
-    font-size: 0.9em;
+    font: 0.8em "Poppins", sans-serif;
+    
     color: #9c9c9c;
     text-decoration: none;
-    padding-bottom: 1em;
+    padding: 1em;
 }
 
 .nav a:active, .nav a:focus, .nav a:hover {
@@ -233,8 +139,10 @@ img {
 }
 
 .banner-title {
-    text-align: center;
+    text-align: left;
     flex: 1 1 100%;
+    margin-top 8em;
+    margin-bottom: 14em;
 }
 
 .banner-title p {
@@ -244,15 +152,9 @@ img {
     color: #808080;
 }
 
-@media (min-width: 66em) { .banner-title {padding: 10em 8.3333333%; }}
-@media (max-width: 66em) { .banner-title {padding: 6em 12.5%; }}
-
 .placeholder-fill {
     background-color: #FF6275;
 }
-
-@media (min-width: 66em) { .project-container {margin-bottom: 25em; }}
-@media (max-width: 66em) { .project-container {margin-bottom: 4em; }}
 
 .main-footer {
     box-shadow: inset 2px 5px 10px rgba(58, 89, 118, 0.08);
@@ -265,7 +167,7 @@ img {
     flex-wrap: -ms-wrap;
     flex-wrap: wrap;
 
-    justify-content: space-around;
+    justify-content: flex-start;
 } 
 
 @media (min-width: 66em) {.main-footer {padding: 2em 8.333333333%; }}
@@ -328,7 +230,7 @@ img {
 }
 
 .project {
-    text-align: center;
+    text-align: left;
     
     position: relative;
     
@@ -729,38 +631,55 @@ footer {
     flex: 1 1 100%;
 }
 
-@media (min-width: 66em) { 
-    .description {
-        flex: 1 1 20%;
-    }
-    
-    .showcase {
-        flex: 4 4 80%;
-    }
-    
-    .demo {
-        padding: 0 8.33333333%;
-    }
-}
-
-@media (max-width: 66em) { 
-    .description {
-        flex: 1 1 100%;
-    }
-    
-    .showcase {
-        flex: 1 1 100%;
-    }
-    
-    .demo {
-        padding: 0 12.5%;
-    }
-    
-}
-
 .description {
-    padding-bottom: 3em;
-    padding-right: 1em;
+    flex: 1 1 25%;
+    padding-right: 8em;
+}
+    
+.showcase {
+    flex: 3 3 75%;
+}
+
+.proj {
+    width: 75%;
+    margin-bottom: 6em;
+}
+
+.proj img {
+    width: 100%;
+    height: 24em;
+}
+
+.proj-info {
+    width: 100%;
+    
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    flex-flow: row;
+
+    justify-content: flex-start;
+}
+
+.proj-info h2, .proj-info p {
+    flex: 1 1 33.3%;
+    padding-right: 1.5em;
+    margin-top: 0;
+}
+
+.proj-info a p {
+    color: #1d1d1d;
+}
+
+.tags {
+    font: "Poppins", sans-serif;
+    font-weight: medium;
+    color: #9C9C9C;
 }
 
 .description h2 {
