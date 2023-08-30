@@ -20,7 +20,7 @@ body {
     
     background-size: 25% 100%;
     background-image: linear-gradient(90deg, #C9C9C9 0.1px, rgba(48, 48, 48, 0) 1px);
-    border-right: solid 1px #C9C9C9;
+    border-right: solid 1px rgba(48, 48, 48, 0);
     background-position: left;
     margin: 0 4em;
 }
