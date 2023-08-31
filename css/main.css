@@ -30,13 +30,13 @@ h1, h2 {
     margin: 0;
 }
 
-@media (min-width: 31em) {
+@media (min-width: 28.5em) {
     h1 {
         font-size: 4em;
     }
 }
 
-@media (max-width: 31em) {
+@media (max-width: 28.5em) {
     h1 {
         font-size: 2.5em;
     }
@@ -155,7 +155,7 @@ img {
     letter-spacing: 1px;
 }
 
-@media (min-width: 31em) {
+@media (min-width: 28.5em) {
     .nav-bar {
         align-items: baseline;
     }
@@ -169,7 +169,7 @@ img {
     }
 }
 
-@media (max-width: 31em) {
+@media (max-width: 28.5em) {
     .nav-bar {
         align-items: center;
     }
