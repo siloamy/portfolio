@@ -72,10 +72,14 @@
         flex-flow: column;
     }
     
-    .proj-info h2, .proj-info p, .proj-info .tags  {
+    .proj-info h2, .proj-info p  {
         flex: 1 1 100%;
         padding-right: 1em;
-        margin-top: 0;
+        margin-top: 0.25em;
+    }
+    
+    .proj-info .tags {
+        display: none;
     }
     
     .proj img {
