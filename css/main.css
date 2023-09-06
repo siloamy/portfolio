@@ -21,6 +21,16 @@ body {
     margin: 0 4em;
 }
 
+.spacer {
+    padding: 4em 0;
+    width: 100vw;
+    
+    background: linear-gradient(rgb(228, 228, 228, 0), rgb(228, 228, 228));
+    
+    border-left: linear-gradient(rgb(228, 228, 228, 0), rgb(228, 228, 228));
+    border-right: linear-gradient(rgb(228, 228, 228, 0), rgb(228, 228, 228));
+}
+
 .salmon {
     color: #FF6275;
 }
@@ -44,6 +54,15 @@ h1, h2 {
 
 h2 {
     font-size: 2em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: 1.25em;
+    color: #FF6275;
 }
 
 a {
@@ -224,6 +243,7 @@ img {
     flex-wrap: wrap;
 
     justify-content: flex-start;
+    
 } 
 
 .main-footer h2 {
