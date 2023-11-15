@@ -1,0 +1,161 @@
+@media (min-width: 69em) {
+    .bio {
+        width: 100%;
+    }
+
+    .bio img {    
+        flex: 1 1 100%;
+        width: 75%;
+        margin-bottom: 4em;
+    }
+    
+    .column {
+        flex-direction: column;
+        flex: 1 1 25%;
+    }
+
+    .about {
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .intro, .principles {
+        padding-right: 1.5em;
+    }
+
+    .principles h3 {
+        margin-bottom: 1.25em;
+    }
+
+    .principles h4 {
+        padding-right: 0.5em;
+    }
+
+    .principle {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+
+        flex-wrap: -webkit-wrap;
+        flex-wrap: -ms-wrap;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+
+        margin-bottom: 1em;
+    }
+
+    .principle h3, .principle p {
+        flex: 1 1 50%
+    }
+}
+
+@media (max-width: 69em) {
+    .bio {
+        width: 100%;
+    }
+
+    .bio img {    
+        flex: 1 1 100%;
+        width: 100%;
+        margin-bottom: 4em;
+    }
+    
+    .column {
+        flex-direction: column;
+        flex: 1 1 25%;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .intro, .principles {
+        padding-right: 2em;
+    }
+
+    .principles h3 {
+        margin-bottom: 1.25em;
+    }
+
+    .principles h4 {
+        padding-right: 0.5em;
+    }
+
+    .principle {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+
+        flex-wrap: -webkit-wrap;
+        flex-wrap: -ms-wrap;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+
+        margin-bottom: 1em;
+    }
+
+    .principle h3, .principle p {
+        flex: 1 1 50%
+    }
+}
+
+@media (max-width: 40em) {
+    .bio {
+        width: 100%;
+    }
+
+    .bio img {    
+        flex: 1 1 100%;
+        width: 100%;
+        margin-bottom: 4em;
+    }
+    
+    .bio .row {
+        flex-direction: column;
+    }
+    
+    .column {
+        flex-direction: column;
+        flex: 1 1 25%;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: 2em;
+    }
+    
+
+    .intro, .principles {
+        padding-right: 2em;
+        margin-bottom: 4em;
+    }
+
+    .principles h3 {
+        margin-bottom: 1.25em;
+    }
+
+    .principles h4 {
+        padding-right: 0.5em;
+    }
+
+    .principle {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+
+        flex-wrap: -webkit-wrap;
+        flex-wrap: -ms-wrap;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+
+        margin-bottom: 1em;
+    }
+
+    .principle h3, .principle p {
+        flex: 1 1 50%
+    }
+}
