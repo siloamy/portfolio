@@ -17,20 +17,25 @@ body {
     color: #1d1d1d;
     
     background-size: 25% 100%;
-    background-image: linear-gradient(90deg, #C9C9C9 0.1px, rgba(48, 48, 48, 0) 1px);
+    background-image: linear-gradient(90deg, #DBDBDB 0.1px, rgba(48, 48, 48, 0) 1px);
     border-right: solid 1px rgba(48, 48, 48, 0);
     background-position: left;
+    
     margin: 0 4em;
 }
 
-.spacer {
-    padding: 4em 0;
-    width: 100vw;
-    
-    background: linear-gradient(rgb(228, 228, 228, 0), rgb(228, 228, 228));
-    
-    border-left: linear-gradient(rgb(228, 228, 228, 0), rgb(228, 228, 228));
-    border-right: linear-gradient(rgb(228, 228, 228, 0), rgb(228, 228, 228));
+@media (max-width: 58.5em) {
+    body {
+        margin: 0 2em;
+    }
+}
+
+::selection {
+    background: #FFC700; 
+}
+
+.placeholder-fill {
+    background-color: #FF6275;
 }
 
 .salmon {
@@ -47,9 +52,15 @@ h1, h2 {
     margin: 0;
 }
 
-@media (min-width: 28.5em) {
+@media (min-width: 58.5em) {
     h1 {
         font-size: 3.5em;
+    }
+}
+
+@media (max-width: 58.5em) {
+    h1 {
+        font-size: 2.5em;
     }
 }
 
@@ -123,7 +134,6 @@ img {
     flex-wrap: wrap;
 
     justify-content: flex-start;
-    margin-bottom: 4em;
 }
 
 .nav-bar {
@@ -133,10 +143,6 @@ img {
     top: 0;
     background: #F5F5F5;
     outline: 1px solid #F5F5F5;
-}
-
-.logo {
-    flex: 1 0;
 }
 
 .logo div {
@@ -157,7 +163,7 @@ img {
 }
 
 .nav {
-    flex: 1 0;
+    
     text-align: right;
     
     display: -webkit-flex;
@@ -177,12 +183,45 @@ img {
     letter-spacing: 1px;
 }
 
-@media (min-width: 28.5em) {
+@media (min-width: 58.5em) {
+    .logo {
+        flex: 1 0 25%;
+    }
+    
     .nav-bar {
         align-items: baseline;
     }
     
     .nav {
+        flex: 1 0 25%;
+        flex-flow: row;
+        justify-content: flex-end;
+    }
+    
+    .button {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 58.5em) {
+    .nav-bar p {
+        display: none;
+    }
+    
+    .logo {
+        flex: 1 0 25%;
+        line-height: 1.85em;
+    }
+    
+    .nav-bar {
+        align-items: center;
+        
+        padding-bottom: 1em;
+        padding-top: 1.65em;
+    }
+    
+    .nav {
+        flex: 1 0 25%;
         flex-flow: row;
         justify-content: flex-end;
     }
@@ -191,24 +230,30 @@ img {
     }
 }
 
+
 @media (max-width: 28.5em) {
+    .logo {
+        flex: 1 0 50%;
+        line-height: 1.65em;
+    }
+    
     .nav-bar {
         align-items: center;
+        padding-bottom: 1em;
+        padding-top: 1.8em;
     }
     
     .nav {
+        flex: 1 0 50%;
         flex-flow: column;
+        max-width: 25
     }
     .button {
-        padding: 0.5em;
+        padding: 0.5em 0.75em;
     }
 }
 
-@media (max-width: 58.5em) {
-    .nav-bar p {
-        display: none;
-    }
-}
+
 
 .button:active, .button:focus, .button:hover {
     color: #ffffff;
@@ -228,24 +273,36 @@ img {
 .banner-title {
     text-align: left;
     flex: 1 1 100%;
-    margin-top 8em;
-    margin-bottom: 12em;
+    margin-top: 4em;
     margin-right: 10%;
     max-width: 64em;
 }
+
+@media (min-width: 58.5em) {
+    .banner-title {
+        margin-bottom: 8em;
+    }
+}
+
+@media (max-width: 58.5em) {
+    .banner-title {
+        margin-bottom: 4em;
+    }
+}
+
 
 .banner-title h1 {
     margin-bottom: 1em;
 }
 
-.placeholder-fill {
-    background-color: #FF6275;
-}
-
-.main-footer {
+footer {    
+    margin-top: 4em;
     padding: 2em 0;
-    box-shadow: inset 2px 5px 10px rgba(58, 89, 118, 0.08);
-        
+    
+    box-shadow: 0 0 0 100vmax #ededed;
+    background: #ededed;
+    clip-path: inset(0 -100vmax);
+    
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -255,49 +312,44 @@ img {
     flex-wrap: wrap;
 
     justify-content: flex-start;
-    
-} 
+}
 
-.main-footer h2 {
-    font-size: 0.9rem;
+footer h2 {
+    font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 0.5em;
     padding: 0;
 }
 
-.main-footer p {
-    font-size:0.85rem;
+footer p {
     margin: auto;
 }
 
-@media (min-width: 66em) {
+@media (min-width: 58.5em) {
+    
     .contact {
-        flex: 1 4 25%;
+        flex: 1 0 25%;
         margin-bottom: 1em;    
     }
+    
     .status {
-        flex: 1 4 25%;
+        flex: 3 0 75%;
         margin-bottom: 1em;
     }
-    .links { 
-        flex: 2 4 50%;
-        margin-bottom: 1em;
-    }
+
 }
 
-@media (max-width: 66em) {
+@media (max-width: 58.5em) {
+    
     .contact {
-        flex: 1 1 100%;
-        
+        flex: 1 0 100%;
     }
+    
     .status {
-        flex: 1 1 100%;
+        flex: 1 0 100%;
         padding-top: 2em;
     }
-    .links { 
-        flex: 1 1 100%;
-        padding-top: 2em;
-    }
+
 }
 
 /* END OF MAIN */
@@ -617,37 +669,73 @@ img {
 /** END OF LIGHTBOX MARKUP **/
 
 
-.row .backbutton {
-    flex: 1 0 25%;
+@media (min-width: 58.5em) {
+    .article.row {
+        flex-flow: row;
+    }
+    
+    .row .backbutton {
+        flex: 1 0 25%;
+    }
+
+    .row .casestudy {
+        flex: 3 0 75%;
+        margin-top: 3em;
+    }
+
+    .casestudy .content {
+        max-width: 66.6%;
+    }
+    
+    .backbutton .button {
+        position: sticky;
+        top: 12em;
+    }
 }
 
-.backbutton .button {
-    position: sticky;
-    top: 12em;
-}
+@media (max-width: 58.5em) {
+    .article.row {
+        flex-flow: column;
+        margin-top: 2em;
+    }
+    
+    .row .backbutton {
+        flex: 1 0 100%;
+        margin-bottom: 2em;
+    }
 
-.row .casestudy {
-    flex: 3 0 75%;
-}
+    .row .casestudy {
+        flex: 3 0 100%;
+    }
 
-.casestudy h3, .casestudy .content img {
-    margin-bottom: 1em;
+    .casestudy .content {
+        max-width: none;
+    }
 }
 
 .casestudy .header {
     margin-bottom: 2em;
 }
 
-.casestudy .content {
-    max-width: 66.6%;
+.casestudy .header h3 {
+    margin: 0.25em 0 1em 0;
 }
 
-.casestudy .content h3 {
+.casestudy h4, .casestudy .content p {
+    margin: 1.5em 0;
+}
+
+
+.casestudy .content h4 {
     margin-top: 2em;
 }
 
 .casestudy .content ul {
     padding-left: 2em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
 }
 
 /* END OF PROJECT CASE STUDY */
